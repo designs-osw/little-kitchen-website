@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery — Little Kitchen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 260px; grid-auto-flow: dense; gap: 20px; }
+@media (max-width: 800px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+
+<div class="site-nav">
+  <a href="index.html" class="logo-link"><img src="images/logo-half.png" alt="Little Kitchen"></a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link"><span class="en">Home</span><span class="zh">首页</span></a>
+    <a href="menu.html" class="nav-link"><span class="en">Menu</span><span class="zh">菜单</span></a>
+    <a href="gallery.html" class="nav-link active"><span class="en">Gallery</span><span class="zh">相册</span></a>
+    <a href="hours.html" class="nav-link"><span class="en">Hours</span><span class="zh">营业时间</span></a>
+    <a href="contact.html" class="nav-link"><span class="en">Contact</span><span class="zh">联系我们</span></a>
+    <div class="lang-toggle">
+      <button type="button" id="lang-en">EN</button>
+      <button type="button" id="lang-zh">中文</button>
+    </div>
+    <a href="contact.html" class="nav-cta"><span class="en">Reserve</span><span class="zh">预订</span></a>
+  </div>
+</div>
+
+<div style="position: relative; width: 100%; height: 500px; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <img style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" src="images/dining-room-lanterns.webp" alt="Dining room, warm lantern lighting">
+  <div style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(20,20,15,0.55) 0%, rgba(20,20,15,0.25) 45%, rgba(20,20,15,0.45) 100%);"></div>
+  <div style="position: relative; z-index: 2; display: flex; flex-direction: column; gap: 18px; align-items: center;">
+    <img src="images/logo-full.png" style="width: 420px; height: auto;" alt="Little Kitchen 小食堂">
+    <div style="font-size: 13px; letter-spacing: 4px; text-transform: uppercase; color: var(--cream);"><span class="en">Gallery</span><span class="zh">相册</span></div>
+  </div>
+</div>
+
+<div class="tile-strip"></div>
+
+<div style="padding: clamp(40px, 8vw, 96px);">
+  <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px;">
+    <img src="images/icon-location.png" alt="" style="height: 84px; width: 84px; object-fit: cover;">
+    <div style="font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: var(--jade);"><span class="en">WHAT YOU CAN EXPECT</span><span class="zh">走进小食堂</span></div>
+    <div style="font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 700; color: var(--jade);"><span class="en">A Look Inside</span><span class="zh">内部实拍</span></div>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-tile" style="grid-column: span 2; grid-row: span 2;"><img src="images/interior.png" alt="Dining room interior"></div>
+    <div class="gallery-tile"><img src="images/storefront.png" alt="Storefront"></div>
+    <div class="gallery-tile"><img src="images/dish-greens.png" alt="Stir-fried greens dish"></div>
+    <div class="gallery-tile"><img src="images/dish-shrimp.png" alt="Shrimp dish"></div>
+    <div class="gallery-tile"><img src="images/digital-menu.png" alt="Digital menu detail"></div>
+    <div class="gallery-tile"><img src="images/chicken-dish.webp" alt="Chicken dish"></div>
+    <div class="gallery-tile" style="grid-row: span 2;"><img src="images/beef-cilantro.jpg" alt="Beef dish with cilantro"></div>
+    <div class="gallery-tile"><img src="images/chicken-wings.jpg" alt="Spiced chicken wings"></div>
+    <div class="gallery-tile"><img src="images/tofu-peas.jpg" alt="Braised tofu with peas"></div>
+    <div class="gallery-tile" style="grid-column: span 2;"><img src="images/greens-carrot.jpg" alt="Stir-fried greens with carrot"></div>
+    <div class="gallery-tile"><img src="images/braised-mushroom.webp" alt="Braised mushroom dish"></div>
+    <div class="gallery-tile"><img src="images/sesame-chicken.webp" alt="Sesame chicken bites"></div>
+    <div class="gallery-tile" style="grid-column: span 2;"><img src="images/dining-room-guests.jpg" alt="Dining room, guests seated"></div>
+    <div class="gallery-tile" style="grid-column: span 2; grid-row: span 2;"><img src="images/chicken-dish-hero.webp" alt="Table spread of dishes"></div>
+    <div class="gallery-tile"><img src="images/wood-ear-mushroom.webp" alt="Braised wood ear mushroom"></div>
+    <div class="gallery-tile"><img src="images/chicken-dish-2.webp" alt="Braised pork with cherry tomatoes"></div>
+  </div>
+</div>
+
+<div class="tile-strip"></div>
+
+<div class="site-footer">
+  <a href="index.html" class="logo-link" style="flex-direction: column;"><img src="images/logo-half.png" alt="Little Kitchen"></a>
+  <div style="display: flex; flex-direction: column; gap: 12px; font-size: 14px; line-height: 1.6;">
+    <div style="font-family: Garamond, serif; font-size: 15px;"><span class="en">Hours</span><span class="zh">营业时间</span></div>
+    <span style="font-family: Garamond, serif; font-size: 15px;">
+      <span class="en">Monday, 11 AM–10 PM<br>Tuesday, 11 AM–10 PM<br>Wednesday, 11 AM–10 PM<br>Thursday, 11 AM–10 PM<br>Friday, 11 AM–10:30 PM<br>Saturday, 11 AM–10:30 PM<br>Sunday, 11 AM–10 PM</span>
+      <span class="zh">星期一，上午11点–晚上10点<br>星期二，上午11点–晚上10点<br>星期三，上午11点–晚上10点<br>星期四，上午11点–晚上10点<br>星期五，上午11点–晚上10点30分<br>星期六，上午11点–晚上10点30分<br>星期日，上午11点–晚上10点</span>
+    </span>
+  </div>
+  <div style="font-size: 14px; line-height: 1.6; font-family: Garamond, serif;">
+    Little Kitchen<br>1724 Hylan Blvd<br>Staten Island, NY 10305<br><br>
+    <svg class="ig-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F7F1DE" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4.5"></circle><circle cx="17.5" cy="6.5" r="1" fill="#F7F1DE" stroke="none"></circle></svg>@littlekitchen_statenisland
+  </div>
+  <div style="font-size: 13px; color: var(--gold-light); opacity: 0.7;">© 2026</div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
