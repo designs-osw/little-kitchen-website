@@ -1,6 +1,6 @@
 # Little Kitchen — Website
 
-A static site for Little Kitchen (Shanghainese restaurant, Staten Island). Plain HTML/CSS/JS — no build step, no framework, no dependencies.
+A static site for Little Kitchen (Shanghainese restaurant). Plain HTML/CSS/JS — no build step, no framework, no dependencies.
 
 ## Structure
 
