@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Little Kitchen — Old Shanghai Soul, Staten Island</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="site-nav">
+  <a href="index.html" class="logo-link"><img src="images/logo-half.png" alt="Little Kitchen"></a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link active"><span class="en">Home</span><span class="zh">首页</span></a>
+    <a href="menu.html" class="nav-link"><span class="en">Menu</span><span class="zh">菜单</span></a>
+    <a href="gallery.html" class="nav-link"><span class="en">Gallery</span><span class="zh">相册</span></a>
+    <a href="hours.html" class="nav-link"><span class="en">Hours</span><span class="zh">营业时间</span></a>
+    <a href="contact.html" class="nav-link"><span class="en">Contact</span><span class="zh">联系我们</span></a>
+    <div class="lang-toggle">
+      <button type="button" id="lang-en">EN</button>
+      <button type="button" id="lang-zh">中文</button>
+    </div>
+    <a href="contact.html" class="nav-cta"><span class="en">Reserve</span><span class="zh">预订</span></a>
+  </div>
+</div>
+
+<div class="tile-strip"></div>
+
+<div style="position: relative; width: 100%; height: 750px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+  <video class="hero-video" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" src="videos/hero-loop-home.mp4" autoplay loop muted playsinline></video>
+  <div style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(20,20,15,0.55) 0%, rgba(20,20,15,0.25) 45%, rgba(20,20,15,0.45) 100%);"></div>
+  <div style="position: relative; z-index: 2; display: flex; flex-direction: column; gap: 12px; align-items: center;">
+    <img src="images/logo-full.png" style="width: 420px; height: auto;" alt="Little Kitchen 小食堂">
+    <a href="menu.html" class="nav-cta" style="font-family: Garamond, serif; font-size: 15px;"><span class="en">View Menu</span><span class="zh">查看菜单</span></a>
+  </div>
+</div>
+
+<div class="tile-strip"></div>
+
+<div style="padding: clamp(40px, 8vw, 96px); display: flex; gap: 64px; align-items: center; border-bottom: 2px solid rgba(201,162,39,0.5); flex-wrap: wrap; background: var(--jade);">
+  <div style="flex: 1; min-width: 280px;">
+    <div style="display: flex; flex-direction: column; gap: 8px; align-items: flex-start;">
+      <img src="images/icon-story.png" alt="" style="height: 84px; width: 84px; object-fit: cover;">
+      <div style="font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: var(--cream);">
+        <span class="en">THE LITTLE KITCHEN STORY</span><span class="zh">小食堂的故事</span>
+      </div>
+      <div style="font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 400; line-height: 1.5; color: var(--gold-light); max-width: 630px;">
+        <span class="en">Old Shanghai soul, spicy twists, and American Chinese heritage all right here.</span>
+        <span class="zh">老上海的情怀，麻辣的创新，美式中餐的传承，尽在此处。</span>
+      </div>
+    </div>
+    <div style="width: 100%; max-width: 627px; font-family: 'Jost', sans-serif; line-height: 1.8; color: var(--cream); font-size: 18px; margin-top: 16px;">
+      <span class="en">Without you, these are just walls. You bring the stories, the laughter, and the family moments. We'll bring the comfort food and radiant service.</span>
+      <span class="zh">没有你们，这里只是四面墙。是你们带来了故事、欢笑与家庭时光，我们则用温暖的家常菜与真诚的服务来迎接你们。</span>
+    </div>
+  </div>
+  <img src="images/storefront-alt.webp" style="flex: 1; min-width: 280px; max-width: 472px; height: 493px; object-fit: cover; border: 1px solid var(--gold);" alt="Little Kitchen storefront">
+</div>
+
+<div class="tile-strip"></div>
+
+<div style="padding: clamp(40px, 8vw, 96px); background: var(--jade);">
+  <div style="display: flex; flex-direction: column; gap: 8px; align-items: center; padding-bottom: 18px;">
+    <img src="images/icon-top-dishes.png" alt="" style="height: 84px; width: 84px; object-fit: cover;">
+    <div style="font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: var(--cream);">
+      <span class="en">MOST LOVED BY OUR CUSTOMERS</span><span class="zh">顾客最爱</span>
+    </div>
+    <div style="font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 500; color: var(--gold-light);">
+      <span class="en">Little Kitchen Top Dishes</span><span class="zh">小食堂人气菜品</span>
+    </div>
+  </div>
+  <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 220px;">
+      <img src="images/dish-greens.png" style="width: 100%; height: 220px; object-fit: cover; border: 1px solid var(--gold);">
+      <div style="font-size: 17px; font-weight: 600; margin-top: 14px; color: var(--cream);"><span class="en">Dish 1</span><span class="zh">菜品一</span></div>
+      <div style="font-size: 14px; color: var(--gold-light); opacity: 0.75; margin-top: 4px;"><span class="en">Made with Ingredient, Sauce, and love.</span><span class="zh">用心食材，秘制酱料，满满诚意。</span></div>
+    </div>
+    <div style="flex: 1; min-width: 220px;">
+      <img src="images/dish-shrimp.png" style="width: 100%; height: 220px; object-fit: cover; border: 1px solid var(--gold);">
+      <div style="font-size: 17px; font-weight: 600; margin-top: 14px; color: var(--cream);"><span class="en">Dish 2</span><span class="zh">菜品二</span></div>
+      <div style="font-size: 14px; color: var(--gold-light); opacity: 0.75; margin-top: 4px;"><span class="en">Made with Ingredient, Sauce, and love.</span><span class="zh">用心食材，秘制酱料，满满诚意。</span></div>
+    </div>
+    <div style="flex: 1; min-width: 220px;">
+      <img src="images/food-detail.png" style="width: 100%; height: 220px; object-fit: cover; border: 1px solid var(--gold);">
+      <div style="font-size: 17px; font-weight: 600; margin-top: 14px; color: var(--cream);"><span class="en">Dish 3</span><span class="zh">菜品三</span></div>
+      <div style="font-size: 14px; color: var(--gold-light); opacity: 0.75; margin-top: 4px;"><span class="en">Made with Ingredient, Sauce, and love.</span><span class="zh">用心食材，秘制酱料，满满诚意。</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="tile-strip"></div>
+
+<div style="padding: clamp(48px, 8vw, 80px) clamp(24px, 6vw, 96px); background: var(--jade);">
+  <div style="position: relative; margin-top: 24px; max-width: 640px; margin-left: auto; margin-right: auto;">
+    <button type="button" class="review-arrow prev" aria-label="Previous review">‹</button>
+    <button type="button" class="review-arrow next" aria-label="Next review">›</button>
+
+    <div class="review-slide active">
+      <img src="images/avatar-placeholder.png" alt="Reviewer photo" style="width: 72px; height: 72px; border-radius: 50%; border: 1px solid var(--gold); margin: 0 auto 16px auto; object-fit: cover;">
+      <svg width="130" height="18" viewBox="0 0 128 24" fill="var(--gold)" style="margin: 0 auto 14px auto; display: block;"><path transform="translate(0,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(26,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(52,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(78,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(104,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/></svg>
+      <div style="font-size: 20px; line-height: 1.4; color: var(--cream);"><span class="en">Everything was great. Each dish better than the one before it. The service was great and the restaurant is very nice.</span><span class="zh">一切都很棒。每道菜都比前一道更惊艳。服务很好，餐厅环境也很不错。</span></div>
+      <div style="margin-top: 18px; font-size: 15px; font-weight: 600; color: var(--cream);">Tim Pezzoli</div>
+      <div style="font-size: 13px; color: var(--gold-light); margin-top: 4px;"><span class="en">Local Guide · Sept 2026</span><span class="zh">本地向导 · 2026年9月</span></div>
+    </div>
+
+    <div class="review-slide">
+      <img src="images/avatar-placeholder.png" alt="Reviewer photo" style="width: 72px; height: 72px; border-radius: 50%; border: 1px solid var(--gold); margin: 0 auto 16px auto; object-fit: cover;">
+      <svg width="130" height="18" viewBox="0 0 128 24" fill="var(--gold)" style="margin: 0 auto 14px auto; display: block;"><path transform="translate(0,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(26,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(52,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(78,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(104,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/></svg>
+      <div style="font-size: 20px; line-height: 1.4; color: var(--cream);"><span class="en">My family loves this restaurant! The food is always delicious, and my kids are always happy when we come here.</span><span class="zh">我们全家都很喜欢这家餐厅！食物总是很美味，孩子们每次来都很开心。</span></div>
+      <div style="margin-top: 18px; font-size: 15px; font-weight: 600; color: var(--cream);">Lien Chau</div>
+      <div style="font-size: 13px; color: var(--gold-light); margin-top: 4px;"><span class="en">Local Guide · Aug 2026</span><span class="zh">本地向导 · 2026年8月</span></div>
+    </div>
+
+    <div class="review-slide">
+      <img src="images/avatar-placeholder.png" alt="Reviewer photo" style="width: 72px; height: 72px; border-radius: 50%; border: 1px solid var(--gold); margin: 0 auto 16px auto; object-fit: cover;">
+      <svg width="130" height="18" viewBox="0 0 128 24" fill="var(--gold)" style="margin: 0 auto 14px auto; display: block;"><path transform="translate(0,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(26,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(52,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(78,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(104,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/></svg>
+      <div style="font-size: 20px; line-height: 1.4; color: var(--cream);"><span class="en">This restaurant is very well organized, and the interior design is thoughtfully done to create a relaxing, peaceful atmosphere.</span><span class="zh">这家餐厅井然有序，室内设计用心营造出轻松宁静的氛围。</span></div>
+      <div style="margin-top: 18px; font-size: 15px; font-weight: 600; color: var(--cream);">Eric So</div>
+      <div style="font-size: 13px; color: var(--gold-light); margin-top: 4px;"><span class="en">Local Guide · Aug 2026</span><span class="zh">本地向导 · 2026年8月</span></div>
+    </div>
+
+    <div class="review-slide">
+      <img src="images/avatar-placeholder.png" alt="Reviewer photo" style="width: 72px; height: 72px; border-radius: 50%; border: 1px solid var(--gold); margin: 0 auto 16px auto; object-fit: cover;">
+      <svg width="130" height="18" viewBox="0 0 128 24" fill="var(--gold)" style="margin: 0 auto 14px auto; display: block;"><path transform="translate(0,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(26,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(52,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(78,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(104,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/></svg>
+      <div style="font-size: 20px; line-height: 1.4; color: var(--cream);"><span class="en">Splendid renovation! The owner has beautifully recreated the atmosphere of old Shanghai in the 1920s.</span><span class="zh">翻新得非常精彩！老板完美地重现了1920年代老上海的氛围。</span></div>
+      <div style="margin-top: 18px; font-size: 15px; font-weight: 600; color: var(--cream);">Bon Wan</div>
+      <div style="font-size: 13px; color: var(--gold-light); margin-top: 4px;"><span class="en">Local Guide · Aug 2026</span><span class="zh">本地向导 · 2026年8月</span></div>
+    </div>
+
+    <div class="review-slide">
+      <img src="images/avatar-placeholder.png" alt="Reviewer photo" style="width: 72px; height: 72px; border-radius: 50%; border: 1px solid var(--gold); margin: 0 auto 16px auto; object-fit: cover;">
+      <svg width="130" height="18" viewBox="0 0 128 24" fill="var(--gold)" style="margin: 0 auto 14px auto; display: block;"><path transform="translate(0,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(26,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(52,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(78,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/><path transform="translate(104,0)" d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279-6.064-5.828 8.332-1.151z"/></svg>
+      <div style="font-size: 20px; line-height: 1.4; color: var(--cream);"><span class="en">Small restaurant with amazing food and excellent service. The Shanghai soup dumplings are a must-try—juicy, flavorful, and absolutely delicious.</span><span class="zh">小小的餐厅，美味的食物，出色的服务。上海小笼包一定要试试——汤汁丰富，味道浓郁，非常美味。</span></div>
+      <div style="margin-top: 18px; font-size: 15px; font-weight: 600; color: var(--cream);">Constance L</div>
+      <div style="font-size: 13px; color: var(--gold-light); margin-top: 4px;"><span class="en">Local Guide · Aug 2026</span><span class="zh">本地向导 · 2026年8月</span></div>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: center; gap: 10px; margin-top: 28px;">
+    <button type="button" class="review-dot active"></button>
+    <button type="button" class="review-dot"></button>
+    <button type="button" class="review-dot"></button>
+    <button type="button" class="review-dot"></button>
+    <button type="button" class="review-dot"></button>
+  </div>
+  <div style="display: flex; justify-content: center; margin-top: 18px;">
+    <img src="images/google-reviews-badge.png" alt="Google Reviews" style="width: 104px; height: 42px;">
+  </div>
+</div>
+
+<div class="tile-strip"></div>
+
+<div style="padding: clamp(40px, 8vw, 96px); display: flex; gap: 48px; border-bottom: 2px solid rgba(201,162,39,0.5); flex-wrap: wrap;">
+  <div style="flex: 1; display: flex; flex-direction: row; justify-content: center; gap: 16px; flex-wrap: wrap; min-width: 280px;">
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <img src="images/icon-location.png" alt="" style="height: 84px; width: 84px; object-fit: cover;">
+      <div style="font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: var(--jade);"><span class="en">LOCATION &amp; HOURS</span><span class="zh">地址与营业时间</span></div>
+      <div style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: var(--jade);"><span class="en">Visit Us!</span><span class="zh">欢迎光临！</span></div>
+      <div style="font-size: 16px; line-height: 1.7;">Little Kitchen<br>1724 Hylan Blvd<br>Staten Island, NY 10305<br><br><span style="font-size: 17px;">(347) 825-2011</span></div>
+      <div>
+        <div>Monday, 11 AM–10 PM</div><div>Tuesday, 11 AM–10 PM</div><div>Wednesday, 11 AM–10 PM</div>
+        <div>Thursday, 11 AM–10 PM</div><div>Friday, 11 AM–10:30 PM</div><div>Saturday, 11 AM–10:30 PM</div><div>Sunday, 11 AM–10 PM</div>
+      </div>
+      <a href="https://resy.com/cities/new-york-ny/venues/little-kitchen?rwg_token=AE37R_gLo2P0ie8a3taXhfeC4l8XF0oad0CJn7hIjF4b0ODurGmfiJNa7_QwVNiuCCA4KHqyKWfeR67w3TMRObKrDmZEoKfm-dE0gtvvGY0eOlJA9O8prkY%3D" target="_blank" rel="noopener noreferrer" class="btn-gold" style="margin-top: 8px;"><span class="en">Reserve</span><span class="zh">预订</span></a>
+    </div>
+  </div>
+  <img src="images/food-detail.png" style="width: 386px; height: 347px; object-fit: cover; border: 1px solid var(--gold);" alt="Little Kitchen dish">
+</div>
+
+<div class="tile-strip"></div>
+
+<div style="padding: clamp(40px, 8vw, 96px); border-bottom: 2px solid rgba(201,162,39,0.5); background: var(--jade);">
+  <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 8px;">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="var(--gold-light)" stroke-width="1.8"></rect><circle cx="12" cy="12" r="5" stroke="var(--gold-light)" stroke-width="1.8"></circle><circle cx="17.5" cy="6.5" r="1.2" fill="var(--cream)" stroke="var(--gold-light)"></circle></svg>
+    <a href="https://www.instagram.com/littlekitchen_statenisland/" target="_blank" style="font-family: 'Playfair Display', serif; font-size: 28px; color: var(--gold-light);">@littlekitchen_statenisland</a>
+  </div>
+  <div style="text-align: center; font-size: 14px; margin-bottom: 12px; color: var(--cream);"><span class="en">Follow us for the latest from the kitchen</span><span class="zh">关注我们，获取后厨最新动态</span></div>
+  <div style="display: flex; gap: 20px; max-width: 780px; margin: 0 auto; flex-wrap: wrap;">
+    <a href="https://www.instagram.com/reel/DcwJZhcRQX4/" target="_blank" style="flex: 1; min-width: 200px; display: block; position: relative;">
+      <img src="images/food-detail.png" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid var(--gold);">
+      <div style="position: absolute; top: 10px; left: 10px; background: rgba(20,20,15,0.55); color: var(--cream); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 12px;">▶</div>
+    </a>
+    <a href="https://www.instagram.com/p/DcX4dt2BD4H/" target="_blank" style="flex: 1; min-width: 200px; display: block;">
+      <img src="images/dish-greens.png" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid var(--gold);">
+    </a>
+    <a href="https://www.instagram.com/p/DZtLrNxFCdK/" target="_blank" style="flex: 1; min-width: 200px; display: block;">
+      <img src="images/dish-shrimp.png" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid var(--gold);">
+    </a>
+  </div>
+  <div style="text-align: center; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--red); opacity: 0.85; margin-top: 20px;">Live feed placeholder — connect a feed service (e.g. SnapWidget, Behold.so) to sync in real posts</div>
+</div>
+
+<div class="tile-strip"></div>
+
+<div class="site-footer">
+  <a href="index.html" class="logo-link" style="flex-direction: column;"><img src="images/logo-half.png" alt="Little Kitchen"></a>
+  <div style="font-size: 14px; line-height: 1.6; font-family: Garamond, serif;">
+    <span style="font-size: 16px; font-family: 'Jost', sans-serif;">Little Kitchen<br>1724 Hylan Blvd<br>Staten Island, NY 10305<br><br></span>
+    <svg class="ig-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F7F1DE" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4.5"></circle><circle cx="17.5" cy="6.5" r="1" fill="#F7F1DE" stroke="none"></circle></svg>
+    <span style="font-family: 'Jost', sans-serif; font-size: 17px;">@littlekitchen_statenisland</span>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 12px; font-size: 14px; line-height: 1.6;">
+    <div style="font-family: 'Jost', sans-serif; font-size: 17px;"><span class="en">Hours</span><span class="zh">营业时间</span></div>
+    <span style="font-family: 'Jost', sans-serif; font-size: 17px;">
+      <span class="en">Monday, 11 AM–10 PM<br>Tuesday, 11 AM–10 PM<br>Wednesday, 11 AM–10 PM<br>Thursday, 11 AM–10 PM<br>Friday, 11 AM–10:30 PM<br>Saturday, 11 AM–10:30 PM<br>Sunday, 11 AM–10 PM</span>
+      <span class="zh">星期一，上午11点–晚上10点<br>星期二，上午11点–晚上10点<br>星期三，上午11点–晚上10点<br>星期四，上午11点–晚上10点<br>星期五，上午11点–晚上10点30分<br>星期六，上午11点–晚上10点30分<br>星期日，上午11点–晚上10点</span>
+    </span>
+  </div>
+  <div style="font-size: 17px; color: var(--gold-light); opacity: 0.7;">© 2026</div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
